@@ -1,0 +1,566 @@
+/* Smartphones (portrait and landscape) ---------- */
+@media screen and (min-width: 320px) and (max-width: 480px){ 
+ /* styles */
+
+*{margin:0;
+padding:0;} 
+
+img.mySlides{width:58vh;}
+
+body{
+background-image: url(wood.jpg);
+}
+
+a.tel{text-decoration: none;
+font-family:palatino linotype, serif;}
+
+span.address
+{font-size:18px;
+font-family:palatino linotype, serif;
+}
+
+span.phrase
+{
+font-family: 'Charmonman', cursive;
+font-size:16px;
+color:#DAA520;}
+
+.content{position: relative;}
+/*******************************************************************************************/
+.social nav{float:right;} 
+
+.social li{list-style-type:none;}
+
+.fa{text-decoration:none;
+display:inline-block;
+padding:10px;
+color:white;
+}
+/*******************************************************************************************/
+        
+img.logo{
+box-shadow:10px 5px 5px 1px black;
+display: inline-block; /*rocco logo styling*/
+width:58vh;}
+         
+.headNav ul{ 
+list-style-type: none;}
+        
+.headNav li a{
+text-decoration: none;}
+        
+.headNav li{
+float:left;}
+        
+.headNav a{
+display: block; 
+padding:10px;
+margin:17px;
+box-shadow:10px 5px 5px 1px black;
+background-color:#282828;
+color:#808000;
+font-weight: bold;
+border-style: solid;
+border-color:#282828;
+border-radius: 20%;
+font-family:palatino linotype, serif;
+text-align: center;}
+/****************************************************************************************************/   
+.bottomNav ul{list-style-type:none;} 
+    
+.bottomNav li a{text-decoration:none;}
+    
+.bottomNav li{float:left;}
+    
+.bottomNav a
+{display:block;
+box-shadow:10px 5px 5px 1px black;
+padding:10px;
+margin:17px;
+border-style:solid;
+border-radius:20%;
+border-color:#282828;
+background-color:#282828;
+color:#808000;
+font-family:palatino linotype, serif;}
+    
+    
+/****************************************************************************************************/  
+dt{font-size:16px;
+text-decoration: underline;}
+
+.operationHours 
+{ 
+font-family:palatino linotype, serif;
+text-align:center;
+font-size:12px;
+color:grey;
+}
+                
+.operationHours dd{ 
+font-size: 14px;
+text-align: center; 
+font-family:palatino linotype, serif;}
+    
+       
+div#mapContainer.gm1mapContainer
+{
+float:left; 
+margin-left:35%;
+margin-right:20%;
+
+}
+
+}
+
+/*************************************************************************/
+/* Smartphones (portrait) ---------- */
+@media screen and (max-width: 320px){
+/* styles */
+
+*{margin:0;
+padding:0;} 
+    
+img.mySlides{width:58vh;}
+    
+body{
+background-image: url(wood.jpg);
+}
+    
+a.tel{text-decoration: none;
+font-family:palatino linotype, serif;}
+    
+span.address
+{font-size:18px;
+font-family:palatino linotype, serif;
+}
+    
+span.phrase
+{
+font-family: 'Charmonman', cursive;
+font-size:16px;
+color:#DAA520;}
+    
+.content{position: relative;}
+/*******************************************************************************************/
+.social nav{float:right;} 
+    
+.social li{list-style-type:none;}
+    
+.fa{text-decoration:none;
+display:inline-block;
+padding:10px;
+color:white;
+}
+/*******************************************************************************************/
+            
+img.logo{
+box-shadow:10px 5px 5px 1px black;
+display: inline-block; /*rocco logo styling*/
+width:58vh;}
+             
+.headNav ul{ 
+list-style-type: none;}
+            
+.headNav li a{
+text-decoration: none;}
+            
+.headNav li{
+float:left;}
+            
+.headNav a{
+display: block; 
+padding:10px;
+margin:17px;
+box-shadow:10px 5px 5px 1px black;
+background-color:#282828;
+color:#808000;
+font-weight: bold;
+border-style: solid;
+border-color:#282828;
+border-radius: 20%;
+font-family:palatino linotype, serif;
+text-align: center;}
+/****************************************************************************************************/   
+.bottomNav ul{list-style-type:none;} 
+        
+.bottomNav li a{text-decoration:none;}
+        
+.bottomNav li{float:left;}
+        
+.bottomNav a
+{display:block;
+box-shadow:10px 5px 5px 1px black;
+padding:10px;
+margin:17px;
+border-style:solid;
+border-radius:20%;
+border-color:#282828;
+background-color:#282828;
+color:#808000;
+font-family:palatino linotype, serif;}
+        
+        
+/****************************************************************************************************/  
+dt{font-size:16px;
+text-decoration: underline;}
+    
+.operationHours 
+{ 
+font-family:palatino linotype, serif;
+text-align:center;
+font-size:12px;
+color:grey;
+}
+                    
+.operationHours dd
+{ 
+font-size: 14px;
+text-align: center; 
+font-family:palatino linotype, serif;}
+        
+           
+div#mapContainer.gm1mapContainer
+{
+float:left; 
+margin-left:35%;
+margin-right:20%;
+}
+    
+}
+
+
+/********************************************************************/
+/* Smartphones (landscape) ---------- */
+@media screen and (min-width: 321px){
+}
+
+/******************************************************************/
+/* Tablets, iPads (portrait and landscape) ---------- */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+/* styles */ 
+*{margin:0;
+padding:0;}
+
+span.phrase
+{
+font-family: 'Charmonman', cursive;
+font-size:24px;
+color:#DAA520;}
+
+img.mySlides
+{width: 75vh;}
+
+body{
+background-image: url(wood.jpg);
+}
+
+a.tel
+{text-decoration: none;
+font-weight:bold;
+font-size: 20px;
+font-family:palatino linotype, serif
+}
+
+span.address
+{font-size:24px;
+font-weight:bold;
+font-family:palatino linotype, serif;
+}
+
+.content{position: relative;}
+
+
+/*******************************************************************************************/
+.social nav
+{float:right; 
+} 
+
+.social li
+{list-style-type:none;
+}
+
+.fa
+{text-decoration:none;
+display:inline-block;
+padding:20px; 
+margin-bottom:10px;
+
+}
+
+.fa-twitter
+{text-decoration:none; 
+
+font-size:20px;
+color:#ffffff;}
+  
+.fa-facebook
+{text-decoration:none; 
+
+font-size:20px;
+color:#ffffff;
+      
+    
+} 
+
+.fa-instagram
+{text-decoration:none; 
+font-size:20px;
+color:#ffffff;
+
+}
+      
+/*******************************************************************************************/
+
+img.logo{
+display: inline-block; /*rocco logo styling*/
+width:75vh;
+box-shadow:10px 5px 5px 5px black;}
+             
+.headNav ul{ 
+list-style-type: none;}
+            
+.headNav li a{
+text-decoration: none;}
+            
+.headNav li{
+float:left;}
+            
+.headNav a{
+display: block; 
+font-size:24px;
+padding:20px;
+margin:38px;
+background-color: #282828;
+color:#808000;
+box-shadow:10px 5px 5px 1px black;
+border-style: solid;
+border-color: #282828;
+border-radius:20%;
+font-family:palatino linotype, serif;
+font-weight: bold;
+text-align: center;}
+
+
+/****************************************************************************************************/   
+.bottomNav ul{list-style-type:none;} 
+    
+.bottomNav li a{text-decoration:none;}
+    
+.bottomNav li{float:left;}
+    
+.bottomNav a
+{display:block;
+font-size:24px;
+box-shadow:10px 5px 5px 1px black;
+padding:20px;
+margin:38px;
+border-style:solid;
+border-radius: 20%;
+border-color: #282828;
+background-color:#282828;
+color:#808000;
+font-weight:bold;
+font-family:palatino linotype, serif;}
+    
+    
+/****************************************************************************************************/  
+dt
+{font-size:30px;
+text-decoration: underline;
+}
+
+.operationHours 
+{
+font-family:palatino linotype, serif;
+text-align:center;
+color:grey;
+}
+               
+.operationHours dd
+{ 
+font-size:26px;
+text-align: center; 
+font-family:palatino linotype, serif;
+}
+
+
+    
+}
+ 
+
+/******************************************************************/
+/* Tablets, iPads (portrait) ---------- */
+@media screen and (min-width: 768px){
+/* styles */
+span.phrase
+{
+font-family: 'Charmonman', cursive;
+font-size:24px;
+color:#DAA520;}
+
+img.mySlides
+{width: 75vh;}
+
+body{
+background-image: url(wood.jpg);
+}
+
+a.tel
+{text-decoration: none;
+font-weight:bold;
+font-size: 20px;
+font-family:palatino linotype, serif
+}
+
+span.address
+{font-size:24px;
+font-weight:bold;
+font-family:palatino linotype, serif;
+}
+
+.content{position: relative;}
+
+
+/*******************************************************************************************/
+.social nav
+{float:right; 
+} 
+
+.social li
+{list-style-type:none;
+}
+
+.fa
+{text-decoration:none;
+display:inline-block;
+padding:20px; 
+margin-bottom:10px;
+}
+
+.fa-twitter
+{text-decoration:none; 
+background: #55ACEE;
+font-size:20px;
+color:#ffffff;}
+  
+.fa-facebook
+{text-decoration:none; 
+background: #3B5998; 
+font-size:20px;
+color:#ffffff;
+} 
+
+.fa-instagram
+{text-decoration:none; 
+font-size:20px;
+color:#ffffff;
+background:#0055;
+}
+      
+/*******************************************************************************************/
+
+img.logo{
+display: inline-block; /*rocco logo styling*/
+width:75vh;
+box-shadow:10px 5px 5px 5px black;}
+             
+.headNav ul{ 
+list-style-type: none;}
+            
+.headNav li a{
+text-decoration: none;}
+            
+.headNav li{
+float:left;}
+            
+.headNav a{
+display: block; 
+font-size:24px;
+padding:20px;
+margin:38px;
+background-color: #282828;
+color:#808000;
+box-shadow:10px 5px 5px 1px black;
+border-style: solid;
+border-color: #282828;
+border-radius:20%;
+font-family:palatino linotype, serif;
+font-weight: bold;
+text-align: center;}
+
+
+/****************************************************************************************************/   
+.bottomNav ul{list-style-type:none;} 
+    
+.bottomNav li a{text-decoration:none;}
+    
+.bottomNav li{float:left;}
+    
+.bottomNav a
+{display:block;
+font-size:24px;
+box-shadow:10px 5px 5px 1px black;
+padding:20px;
+margin:38px;
+border-style:solid;
+border-radius: 20%;
+border-color: #282828;
+background-color:#282828;
+color:#808000;
+font-weight:bold;
+font-family:palatino linotype, serif;}
+    
+    
+/****************************************************************************************************/  
+dt
+{font-size:30px;
+text-decoration: underline;
+}
+
+.operationHours 
+{
+font-family:palatino linotype, serif;
+text-align:center;
+color:grey;
+}
+               
+.operationHours dd
+{ 
+font-size:26px;
+text-align: center; 
+font-family:palatino linotype, serif;
+}
+
+} 
+
+/******************************************************************/
+/* Tablets, iPads (landscape) ---------- */
+@media screen and (min-width: 1024px){
+/* styles */
+*{margin:0;
+padding:0;}
+
+} 
+
+/******************************************************************/
+
+/* Desktops and laptops ---------- */
+@media screen and (min-width: 1224px){
+/* styles */
+*{margin:0;
+padding:0;}
+
+} 
+
+/******************************************************************/
+
+/* Large screens ---------- */
+@media screen and (min-width: 1824px){
+/* styles */
+*{
+margin:0;
+padding:0;
+}
+
+}
