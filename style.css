@@ -14,19 +14,30 @@
 /* styles */ 
 *{margin:0;
 padding:0;}
-header{background-image: url(./img/morepasta.jpg); 
-        background-repeat: no-repeat; 
-    background-size: cover; 
-    height:100vh;
-    position: relative;}
-.row{ 
-    display: flex;
-    border-style:2px solid;
-    border-color:black;}
 
-.container{ 
-    border-style:2px solid;
-    border-color:black;}
+header{ 
+    margin-top:5%;
+    background-color:#1A1919;
+} 
+
+#top-row{
+    background-image:url(./img/fireplace.jpg) ; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position-y:start; 
+    background-position-x: center;
+
+} 
+
+
+body{
+    background-color:#282828;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y:50%;
+    background-position-x: 30%; 
+    
+}
 span.phrase
 { 
     font-family: 'Charmonman', cursive;
@@ -39,7 +50,7 @@ span.phrase
 a.tel
 {text-decoration: none;
 font-weight:bold;
-font-family:palatino linotype, serif
+font-family:'palatino linotype', serif;
 }
 
 span.address
@@ -91,7 +102,6 @@ color:#ffffff;
 }
       
 /*******************************************************************************************/
-
              
 .headNav ul{ 
 list-style-type: none;}
@@ -167,8 +177,15 @@ font-family:palatino linotype, serif;
 @media screen and (min-width: 768px){
 /* styles */
 body{
-    background-image: url(./img/wood.jpg); 
-}
+  background-color: #282828;
+} 
+
+#top-row{
+    background-image:url(./img/fireplace.jpg) ; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position-x: -2;
+} 
 
 span.phrase
 {
@@ -310,27 +327,32 @@ font-family:palatino linotype, serif;
 padding:0;}
 
 header{ 
+    margin-top:5%;
     border-style: 2px solid; 
     border-color:black;
-    background-image: url(./img/fireplace.jpg);
+    background-color:#1A1919;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+#top-row{
+    background-image:url(./img/fireplace.jpg) ; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position-x: -2;
+} 
 
 body{
-    background-image: url(./img/wood.jpg); 
+    background-image:url(./img/wood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y:50%;
+    background-position-x: 30%; 
+    
 }
-
-
-    .row{
-        border-style:2px solid;
-        border-color:black;
-    }
 
 
 } 
 
 /******************************************************************/
-/********************************************************/
+
 
