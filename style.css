@@ -176,9 +176,7 @@ font-family:palatino linotype, serif;
 /* Tablets, iPads (portrait) ---------- */
 @media screen and (min-width: 768px){
 /* styles */
-body{
-  background-color: #282828;
-} 
+
 
 #top-row{
     background-image:url(./img/fireplace.jpg) ; 
@@ -324,6 +322,9 @@ font-family:palatino linotype, serif;
 @media screen and (min-width: 1024px){
 /* styles */
 *{margin:0;
+padding:0;} 
+
+.navbar{margin:0;
 padding:0;}
 
 header{ 
@@ -341,10 +342,7 @@ header{
     background-position-x: -2;
 } 
 
-body{
- background: #282828;
-    
-}
+
 
 
 
