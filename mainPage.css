@@ -1,0 +1,11 @@
+body{
+    padding:0;
+    margin:0;
+    line-height: 1.5;
+    
+}
+
+.container-fluid #top-row{
+    background-color: coral;
+    padding:.5%;
+}

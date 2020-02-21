@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainPage.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <header>  
+        <nav> 
+            <div class="container"> 
+                <nav class="navbar navbar-expand navbar-light" id="top-nav">
+                    <div id="logo"><a class="navbar-brand" href="#">
+                      <img class="img-fluid d-inline-block align-top" src="./img/roccoLogo01.jpg" style="height:20%; width: 35%; border-radius: 20% ; box-shadow:10px 5px 5px 1px black;;" >
+                     </a>
+                   </div>
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggler">
+                       <span class="navbar-toggler-icon">
+                       </span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarNav">
+                       <ul class="navbar-nav">
+                         <li class="nav-item active">
+                           <a class="nav-link" href="#">Menu 
+                             <span class="sr-only">(current)
+                             </span>
+                         </a>
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link" href="#">Drinks
+                           </a>
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link" href="#">Reserve
+                           </a>
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">VIP
+                           </a>
+                         </li>
+                       </ul>
+                     </div>
+                   </div>
+                   </nav>
+            </div>
+        </nav>
+    </header> 
+    <div class="container-fluid mt-2" id="top-row"> 
+        <div class="row mt-5 mr-3 ml-3" >
+            <div class="col mt-3 mb-3 ml-3 mr-3"> 
+              <img  class="img-fluid"src="./img/food03.jpg">
+            </div> 
+            <div class="col mt-3 mb-3"> 
+              <img  class="img-fluid" src="./img/food04.jpg">
+            </div> 
+            <div class="col mt-3 mb-3"> 
+              <img class=" img-fluid"src="./img/food06.jpg">
+            </div>
+        </div>  
+    </div>
+      <div class="container-fluid" id="intro" style= "background-image:url(./img/fireplace.jpg) ;  background-repeat: no-repeat;  background-size: cover; background-position-y:center; position:static;"> 
+                  <div class="row">
+                    <div class="col-sm">     
+                        <h2 style="color: white;" id="address">165 Monroe Ave, Rochester NY</h2>   
+                          <a href="tel:+5854543510">585-454-3510</a>
+                            <dl style="color: white;"> 
+                             <dt>Monday</dt> 
+                             <dt>Tuesday - Thursday</dt>
+                             <dt>Friday</dt>
+                             <dt>Saturday</dt>
+                             <dt>Sunday</dt>
+                             </dl>
+                    </div> 
+                    <div class="col-sm"> 
+                        <img class="img-fluid mb-4 mt-5 ml-5" src="./img/roccoLogo01.jpg" style="height:50%; width: 55%; border-radius: 20%;">
+                        <h4 style="color: white;">Come Dine with us</h4> 
+                        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modalReserve" id="btnReserve">
+                            Reserve Now 
+                        </button> 
+                        <!--Modal-->
+                        <div class="modal fade" id="modalReserve" tabindex="-1" role="dialog" aria-labelledby="ReserveNow"> 
+                          <div class="modal-dialog" role="document"> 
+                            <div class="modal-content"> 
+                               <div class="modal-header"> 
+                                <h5 class="modal-title">Reservation Request</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> 
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div> 
+                            <div class="modal-body"> 
+                              <form name="reserveForm">
+                                <small>Please note if the party is larger than (6) please call.</small>
+                                <div class= "form-row align-items-center"> 
+                                  <div class="col-auto">
+                                  <input type="text" class="form-control" id="firstNameInput" name="fname" placeholder="First Name" required>
+                                </div>
+                                <div class="col-auto">
+                                  <input type="text" class="form-control" id="lastNameInput" name="lname" placeholder=" Last Name" required>
+                                </div> 
+                                </div>  
+    
+                                <div class="form-row align-items-center">
+                                  <div class="col-auto">
+                                  <input type="tel" class="form-control" placeholder="Phone" required> 
+                                  </div> 
+                                  <div class="col-auto">
+                                  <input type="email" class="form-control" placeholder="Email" required>
+                                  </div>
+                                </div>   
+    
+                                <div class="form-group">  
+                                  <label for="guestAmt">Guest</label>
+    
+                                  <select class="form-control-small mt-2" id="guestAmt"> 
+                                    <option>1</option> 
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>6</option>
+                                  </select>  
+    
+                                  <label>Day</label>
+                                <select class="form-control-small mt-2" id="daySelect"> 
+                                  <option>Monday</option> 
+                                  <option>Tuesday</option>
+                                  <option>Wednesday</option>
+                                  <option>Thursday</option> 
+                                  <option>Friday</option> 
+                                  <option>Saturday</option>
+                                </select> 
+    
+                                  <label>Time</label> 
+                                   
+    
+    
+                                  <textarea class="form-control" rows="3" placeholder="Requests"></textarea>
+                                </div>
+    
+                              </form>  
+                            </div>
+                            <div class="modal-footer"> 
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                              <button type="button" id="reserveBtn"  class="btn btn-primary" onclick="reserveNow()" disabled>Reserve</button>
+    
+                              </div>
+                            </div>
+    
+                          </div>
+                        </div>
+                    </div>    
+                </div>
+           </div>
+</body>
+</html>

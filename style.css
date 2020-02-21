@@ -1,3 +1,29 @@
+body{
+    font:15px/1.5 Arial,Helvetica, sans-serif;
+    padding:0;
+    margin:0;
+} 
+
+.container{
+    width:80%;
+    margin:auto;
+    overflow: hidden;
+}
+
+/*
+@media only screen and (max-width:375px){
+div#logo{display: none;}
+div#top-row{ 
+    margin:0; 
+    background-image:none;} 
+
+    #address,#telephone{font-size: smaller;}
+    dl{display: none;}
+
+}  
+
+*/
+
 /* Smartphones (portrait and landscape) ---------- */
 
 
@@ -10,11 +36,22 @@
 
 /******************************************************************/
 /* Tablets, iPads (portrait and landscape) ---------- */
+/*
 @media screen and (min-width: 768px) and (max-width: 1024px){
 /* styles */ 
+/*
 *{margin:0;
 padding:0;}
 
+
+
+#top-nav{ 
+    background-color: #DAA520;
+} 
+
+#toggler{ 
+    background-color: aqua;
+}
 header{ 
     margin-top:5%;
     background-color:#1A1919;
@@ -29,14 +66,12 @@ header{
 
 } 
 
+#address{ 
+font-size:25px
+}
 
-body{
-    background-color:#282828;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y:50%;
-    background-position-x: 30%; 
-    
+#midsection{ 
+  margin-right:5px;
 }
 span.phrase
 { 
@@ -63,6 +98,7 @@ font-family:palatino linotype, serif;
 
 
 /*******************************************************************************************/
+/*
 .social nav
 {float:right; 
 } 
@@ -102,7 +138,7 @@ color:#ffffff;
 }
       
 /*******************************************************************************************/
-             
+/*
 .headNav ul{ 
 list-style-type: none;}
             
@@ -129,6 +165,7 @@ text-align: center;}
 
 
 /****************************************************************************************************/   
+/*
 .bottomNav ul{list-style-type:none;} 
     
 .bottomNav li a{text-decoration:none;}
@@ -152,7 +189,7 @@ font-family:palatino linotype, serif;}
     
 /****************************************************************************************************/  
 
-
+/*
 .operationHours 
 {
 font-family:palatino linotype, serif;
@@ -174,16 +211,23 @@ font-family:palatino linotype, serif;
 
 /******************************************************************/
 /* Tablets, iPads (portrait) ---------- */
-@media screen and (min-width: 768px){
+/*
+@media screen and (max-width: 768px){
 /* styles */
-
+/*
 
 #top-row{
     background-image:url(./img/fireplace.jpg) ; 
     background-repeat: no-repeat; 
     background-size: cover;
     background-position-x: -2;
-} 
+}  
+
+
+a.tel
+{text-decoration: none;
+font-weight:bold;
+}
 
 span.phrase
 {
@@ -210,6 +254,7 @@ font-family:palatino linotype, serif;
 
 
 /*******************************************************************************************/
+/*
 .social nav
 {float:right; 
 } 
@@ -230,6 +275,7 @@ margin-bottom:10px;
 background: #55ACEE;
 font-size:20px;
 color:#ffffff;}
+
   
 .fa-facebook
 {text-decoration:none; 
@@ -296,6 +342,7 @@ font-family:palatino linotype, serif;}
     
     
 /****************************************************************************************************/  
+/*
 dt
 {
 text-decoration: underline;
@@ -319,8 +366,10 @@ font-family:palatino linotype, serif;
 
 /******************************************************************/
 /* Tablets, iPads (landscape) ---------- */
+/*
 @media screen and (min-width: 1024px){
 /* styles */
+/*
 *{margin:0;
 padding:0;} 
 
