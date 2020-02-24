@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="./css/mainPage.css">
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Rocco|Home</title>
 </head>
-<body>
+<body style="background-color: #461304;">
     <header>  
         <nav> 
             <div class="container"> 
-                <nav class="navbar navbar-expand navbar-light" id="top-nav">
+                <nav class="navbar navbar-expand navbar-light" id="top-nav" style="background-color:#FBBA48">
                     <div id="logo"><a class="navbar-brand" href="#">
-                      <img class="img-fluid d-inline-block align-top" src="./img/roccoLogo01.jpg" style="height:20%; width: 35%; border-radius: 20% ; box-shadow:10px 5px 5px 1px black;;" >
+                      <img class="img-fluid d-inline-block align-top" src="./img/roccoLogo01.jpg" style="height:20%; width: 35%; border-radius: 20% ;" >
                      </a>
                    </div>
                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggler">
@@ -24,10 +24,17 @@
                      </button>
                      <div class="collapse navbar-collapse" id="navbarNav">
                        <ul class="navbar-nav">
-                         <li class="nav-item active">
-                           <a class="nav-link" href="#">Menu 
-                             <span class="sr-only">(current)
-                             </span>
+                           <li class="nav-item active"> 
+                               <a class="nav-link" href="#">Home
+                                <span class="sr-only">(current)
+                                </span>
+
+                               </a> 
+
+                           </li>
+                         <li class="nav-item">
+                           <a class="nav-link" href="./menu.html">Menu 
+                             
                          </a>
                          </li>
                          <li class="nav-item">
@@ -49,35 +56,37 @@
             </div>
         </nav>
     </header> 
-    <div class="container-fluid mt-2" id="top-row"> 
-        <div class="row mt-5 mr-3 ml-3" >
-            <div class="col mt-3 mb-3 ml-3 mr-3"> 
+    <div class="container-fluid mt-3 mb-3" id="top-row" style="background-color:#A18C88"> 
+        <div class="row mr-3 ml-3 " >
+            <div class="col-sm-4 "> 
               <img  class="img-fluid"src="./img/food03.jpg">
             </div> 
-            <div class="col mt-3 mb-3"> 
+            <div class="col-sm-4"> 
               <img  class="img-fluid" src="./img/food04.jpg">
             </div> 
-            <div class="col mt-3 mb-3"> 
+            <div class="col-sm-4"> 
               <img class=" img-fluid"src="./img/food06.jpg">
             </div>
         </div>  
     </div>
       <div class="container-fluid" id="intro" style= "background-image:url(./img/fireplace.jpg) ;  background-repeat: no-repeat;  background-size: cover; background-position-y:center; position:static;"> 
-                  <div class="row">
-                    <div class="col-sm">     
+                  <div class="row mt-2" id="intro">
+                    <div class="col-md-6">     
                         <h2 style="color: white;" id="address">165 Monroe Ave, Rochester NY</h2>   
                           <a href="tel:+5854543510">585-454-3510</a>
                             <dl style="color: white;"> 
-                             <dt>Monday</dt> 
-                             <dt>Tuesday - Thursday</dt>
-                             <dt>Friday</dt>
-                             <dt>Saturday</dt>
-                             <dt>Sunday</dt>
+                             <dt>Monday-Thursday</dt> 
+                             <dd>Full Menu 5:30pm - 9:30pm</dd>
+                             <dt>Friday Only</dt> 
+                             <dd>Lunch 11:30am - 2pm</dd>
+                             <dt>Friday - Saturday</dt>
+                             <dd>Full Menu 5pm - 10pm</dd>
+                             <dt>Closed Sunday</dt>
                              </dl>
                     </div> 
-                    <div class="col-sm"> 
+                    <div class="col-md-6" id="intro-col"> 
                         <img class="img-fluid mb-4 mt-5 ml-5" src="./img/roccoLogo01.jpg" style="height:50%; width: 55%; border-radius: 20%;">
-                        <h4 style="color: white;">Come Dine with us</h4> 
+                        <h4 style="color: white; text-align: center;">Come Dine with us</h4> 
                         <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modalReserve" id="btnReserve">
                             Reserve Now 
                         </button> 
@@ -151,8 +160,58 @@
     
                           </div>
                         </div>
-                    </div>    
+                    </div>   
                 </div>
            </div>
+           <div class="container-fluid mt-2" id="bottom-row" style="background-color:#A18C88"> 
+            <div class="row mr-3 ml-3" >
+                <div class="col-sm-3 "> 
+                  <img  class="img-fluid"src="./img/food03.jpg">
+                </div> 
+                <div class="col-sm-3"> 
+                  <img  class="img-fluid" src="./img/food04.jpg">
+                </div> 
+                <div class="col-sm-3"> 
+                  <img class=" img-fluid"src="./img/food06.jpg">
+                </div>
+                <div class="col-sm-3"> 
+                    <img  class="img-fluid"src="./img/food03.jpg">
+                </div>
+
+            </div>  
+        </div>
+        <div class="container-fluid" id="joinNow" style="background-color:#EFEDE2;"> 
+         <div class="row mt-2 mb-2" id="joinNow"> 
+             <div class="col-md-12" id="joinNow"> 
+                 <section id="joinNow"> 
+                    <h1 style="text-align: center;">Join Now</h1>
+                 <form> 
+                     <input type="email" placeholder="Join The VIP list"> 
+                     <button class="btn btn-light" type="submit">Submit</button>
+                 </form>
+             </section>
+             </div>
+         </div> 
+     </div>
+     <div class="container-fluid"> 
+         <div class="row">
+             <div class="col-md-6 mt-2"> 
+                <img class="img-fluid"src="./img/Rocco-Rochester-NY.jpeg">
+             </div>
+             <div class="col-md-6 mt-2"> 
+                <iframe width="100%" height="100%" 
+                frameborder="0" scrolling="no" 
+                title="Google Maps" 
+                aria-label="Google Maps" 
+                src="https://static.parastorage.com/services/santa/1.5213.11/static/external/googleMap.html?language=en&amp;lat=43.1506316&amp;long=-77.60118009999997&amp;address=165 Monroe Ave, Rochester, NY 14607, USA&amp;addressInfo=rocco&amp;showZoom=true&amp;showStreetView=true&amp;showMapType=true">
+                </iframe>
+             </div>
+         </div>  
+
+     </div>
+        <footer style="background-color:#FBBA48">
+           
+            <p>Rocco | Website Redesign &copy;</p>
+        </footer>
 </body>
 </html>

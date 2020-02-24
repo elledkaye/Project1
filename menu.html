@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mainPage.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <!--Google Fonts--> 
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans|Yeseva+One&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Rocco|Menu</title>
+</head>
+<body style="background-color: #461304;">
+    <header>  
+        <nav> 
+            <div class="container"> 
+                <nav class="navbar navbar-expand navbar-light" id="top-nav" style="background-color:#FBBA48">
+                    <div id="logo"><a class="navbar-brand" href="index.html">
+                      <img class="img-fluid d-inline-block align-top" src="./img/roccoLogo01.jpg" style="height:20%; width: 35%; border-radius: 20% ;" >
+                     </a>
+                   </div>
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggler">
+                       <span class="navbar-toggler-icon">
+                       </span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarNav">
+                       <ul class="navbar-nav">
+                           <li class="nav-item"> 
+                               <a class="nav-link" href="./mainPage.html">Home
+                               </a>
+                           </li>
+                         <li class="nav-item active">
+                           <a class="nav-link" href="#">Menu 
+                            <span class="sr-only">(current)
+                            </span>
+                         </a>
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link" href="#">Drinks
+                           </a>
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link" href="#">Reserve
+                           </a>
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">VIP
+                           </a>
+                         </li>
+                       </ul>
+                     </div>
+                   </div>
+                   </nav>
+            </div>
+        </nav>
+    </header> 
+   
+      <div class="container-fluid mt-2" id="menu-intro" style= "background-image:url(./img/fireplace.jpg) ;  background-repeat: no-repeat;  background-size: cover; background-position-y:center; position:static;"> 
+                  <div class="row mt-2" id="menu-intro">
+                    <div class="col-md-12 mt-2">     
+                       <h1 style="text-align: center; color: wheat;">Menu</h1>  
+                       <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modalReserve" id="btnReserve">
+                        Reserve Now 
+                    </button> 
+                    <!--Modal-->
+                    <div class="modal fade" id="modalReserve" tabindex="-1" role="dialog" aria-labelledby="ReserveNow"> 
+                      <div class="modal-dialog" role="document"> 
+                        <div class="modal-content"> 
+                           <div class="modal-header"> 
+                            <h5 class="modal-title">Reservation Request</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> 
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div> 
+                        <div class="modal-body"> 
+                          <form name="reserveForm">
+                            <small>Please note if the party is larger than (6) please call.</small>
+                            <div class= "form-row align-items-center"> 
+                              <div class="col-auto">
+                              <input type="text" class="form-control" id="firstNameInput" name="fname" placeholder="First Name" required>
+                            </div>
+                            <div class="col-auto">
+                              <input type="text" class="form-control" id="lastNameInput" name="lname" placeholder=" Last Name" required>
+                            </div> 
+                            </div>  
+
+                            <div class="form-row align-items-center">
+                              <div class="col-auto">
+                              <input type="tel" class="form-control" placeholder="Phone" required> 
+                              </div> 
+                              <div class="col-auto">
+                              <input type="email" class="form-control" placeholder="Email" required>
+                              </div>
+                            </div>   
+
+                            <div class="form-group">  
+                              <label for="guestAmt">Guest</label>
+
+                              <select class="form-control-small mt-2" id="guestAmt"> 
+                                <option>1</option> 
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>6</option>
+                              </select>  
+
+                              <label>Day</label>
+                            <select class="form-control-small mt-2" id="daySelect"> 
+                              <option>Monday</option> 
+                              <option>Tuesday</option>
+                              <option>Wednesday</option>
+                              <option>Thursday</option> 
+                              <option>Friday</option> 
+                              <option>Saturday</option>
+                            </select> 
+
+                              <label>Time</label> 
+                               
+
+
+                              <textarea class="form-control" rows="3" placeholder="Requests"></textarea>
+                            </div>
+
+                          </form>  
+                        </div>
+                        <div class="modal-footer"> 
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                          <button type="button" id="reserveBtn"  class="btn btn-primary" onclick="reserveNow()" disabled>Reserve</button>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div> 
+                </div> 
+           </div> 
+      </div>
+           <div class="container-fluid mt-2 " style="background-color:#A18C88"> 
+            <div class="row mr-3 ml-3" style="border: 3px solid black;" >
+                    <div class="col mt-3 mb-3">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                              <div class="card-header" id="headingOne">
+                                <h2 class="mb-0 text-center">
+                                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <h3 class="menu">Antipasti</h3>
+                                  </button>
+                                </h2>
+                              </div>
+                          
+                              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <dl style="text-align: center;"> 
+                                        <dt>Olives /$5</dt> 
+                                        <dd>House Marinated Olives</dd>
+                                        <span style="border-style: solid; border-radius: 50%; padding:.2%">VG</span>
+                                        <dt>Polpo / $12</dt> 
+                                        <dd>Grilled octopus / green sauce</dd>
+                                        <dt>Ricotta / $11</dt> 
+                                        <dt>Aranchini / $8</dt> 
+                                        <dt>Mozarella</dt>
+                                        <dt>polpette / $9</dt>
+                                        <dt>insalata miele con crosini di robiolo / $9</dt>
+                                        <dt>insalata italiana rocco / $9</dt>
+                                        <dt>insalata tricolore / $8</dt>
+                                        <dt>insalata "caesar cardini" / $9</dt>
+                                    </dl>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0 text-center">
+                                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <h3 class="menu">Pizza</h3>
+                                  </button>
+                                </h2>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingThree">
+                                <h2 class="mb-0 text-center">
+                                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <h3 class="menu">Piatti</h3>
+                                  </button>
+                                </h2>
+                              </div>
+                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                  <h2 class="mb-0 text-center">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                      <h3 class="menu">Contorni</h3>
+                                    </button>
+                                  </h2>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                  <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                        
+                </div>
+           </div>
+           </div>
+           
+        <div class="container-fluid" id="joinNow" style="background-color:#EFEDE2;"> 
+         <div class="row mt-2 mb-2" id="joinNow"> 
+             <div class="col-md-12" id="joinNow"> 
+                 <section id="joinNow"> 
+                    <h1 style="text-align: center;">Join Now</h1>
+                 <form> 
+                     <input type="email" placeholder="Join The VIP list"> 
+                     <button class="btn btn-light" type="submit">Submit</button>
+                 </form>
+             </section>
+             </div>
+         </div> 
+     </div>
+     <div class="container-fluid"> 
+      <div class="row">
+          <div class="col-md-6 mt-2"> 
+             <img class="img-fluid"src="./img/Rocco-Rochester-NY.jpeg">
+          </div>
+          <div class="col-md-6 mt-2"> 
+             <iframe width="100%" height="100%" 
+             frameborder="0" scrolling="no" 
+             title="Google Maps" 
+             aria-label="Google Maps" 
+             src="https://static.parastorage.com/services/santa/1.5213.11/static/external/googleMap.html?language=en&amp;lat=43.1506316&amp;long=-77.60118009999997&amp;address=165 Monroe Ave, Rochester, NY 14607, USA&amp;addressInfo=rocco&amp;showZoom=true&amp;showStreetView=true&amp;showMapType=true">
+             </iframe>
+          </div>
+      </div>  
+
+    
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <footer style="background-color:#FBBA48">
+           
+            <p>Rocco | Website Redesign &copy;</p>
+        </footer>
+</body>
+</html>

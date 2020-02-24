@@ -1,0 +1,46 @@
+body{
+    padding:0;
+    margin:0;
+    line-height: 1.5;  
+}
+
+.navbar-nav{
+    text-transform: uppercase;
+}
+.container-fluid{
+    overflow: hidden;
+}
+.row#intro{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+button#btnReserve{
+    float: right;
+    margin-right:40%;
+    padding:10px 20px 10px 20px;
+}
+.container-fluid#joinNow{
+    display: flex;
+    flex-direction: column;
+}
+.row#joinNow{
+  padding: 10px;
+  margin:auto;
+} 
+section#joinNow input[type="email"]{ 
+    padding:10px;
+    height:37px;
+    width:250px;
+    border:none;
+}
+footer{
+    margin-top:20px;
+    padding:20px;
+    text-align:center;
+} 
+
+/*Menu*/ 
+.container-fluid#menu-intro, h3.menu{
+    font-family:'Yeseva One';
+} 
