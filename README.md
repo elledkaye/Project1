@@ -1,6 +1,7 @@
 #Rocco Redesign 
 
-This mini project is to re-create/improve a website making it more appealing and more user friendly. 
+Description: 
+This mini project is to re-create/improve a current website making it more appealing and more user friendly. 
 
 The main purpose is to excersise and improve HTML, CSS, and Bootstrap skills. 
 
