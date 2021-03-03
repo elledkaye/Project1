@@ -102,6 +102,21 @@ section#joinNow input[type="email"]{
     width:250px;
     border:none;
 }
+
+.row#map{
+    height:50vh;
+    display: flex;
+    /*padding: 0px 5px 10px 5px; /*padding = top, right, bottom, left*/
+    border:5px solid white; 
+}
+#rocco-map{
+    
+}
+
+#footer-nav{
+   
+    border:2px solid black;
+}
 footer{
     margin-top:20px;
     padding:20px;
