@@ -44,8 +44,7 @@ header nav{
 }
 .navbar-nav{
     text-transform: uppercase;
-    font-weight: 500;
-    
+    font-weight: 500; 
 }
 .container{
     margin: auto;
@@ -57,13 +56,16 @@ header nav{
     text-align: center;
 }
 #section-one{
-    min-height: 400px;
-    background-image: url(/img/food08.jpg);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    min-height:300px;
+    background-image: url(/img/wood.jpg);
     background-repeat: no-repeat;
     background-position: left; 
     background-size: cover; 
     text-align: center;
 }
+
 
 #section-one h3{
     margin-top:5px;
@@ -105,17 +107,22 @@ section#joinNow input[type="email"]{
 
 .row#map{
     height:50vh;
-    display: flex;
+    
     /*padding: 0px 5px 10px 5px; /*padding = top, right, bottom, left*/
     border:5px solid white; 
 }
-#rocco-map{
-    
+#rocco-map{ 
+    display: flex;
+    justify-content: space-around;
 }
 
-#footer-nav{
-   
+#footer-nav{ 
+    display: flex;
+    justify-content: space-around;
     border:2px solid black;
+} 
+#footer-nav li{ 
+    padding:10px;
 }
 footer{
     margin-top:20px;
@@ -128,3 +135,20 @@ footer{
 
 
 /*Media Queries*/ 
+@media(max-width:768px){
+    header #branding,
+    header nav, 
+    header nav li,
+    #section-two h1,
+    #section-two ,#section-three .food-img
+    article#main-col,
+    aside#sideBar{
+       float:none;
+       text-align:center;
+       width:100%;
+   }
+#section-three .food-img{
+    display:none;
+}
+
+}
