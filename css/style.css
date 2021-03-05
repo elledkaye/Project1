@@ -109,7 +109,7 @@ section#joinNow input[type="email"]{
     height:50vh;
     
     /*padding: 0px 5px 10px 5px; /*padding = top, right, bottom, left*/
-    border:5px solid white; 
+   
 }
 #rocco-map{ 
     display: flex;
@@ -119,7 +119,7 @@ section#joinNow input[type="email"]{
 #footer-nav{ 
     display: flex;
     justify-content: space-around;
-    border:2px solid black;
+   
 } 
 #footer-nav li{ 
     padding:10px;
