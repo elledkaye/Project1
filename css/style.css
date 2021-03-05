@@ -131,7 +131,9 @@ footer{
 } 
 
 /*Menu*/ 
-
+#section-one #menu-intro{
+    min-height: 200px;
+}
 
 
 /*Media Queries*/ 
